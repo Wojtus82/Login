@@ -1,13 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD>
-<META content="text/html; charset=windows-1250" http-equiv=Content-Type>
-<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
-<BODY><PRE>&lt;!DOCTYPE html&gt;
-&lt;html lang="pl"&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;title&gt;Pytanie kontrolne&lt;/title&gt;
-&lt;style&gt;
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Pytanie kontrolne</title>
+<style>
     body {
         font-family: Arial, sans-serif;
         background: #f5f5f5;
@@ -49,18 +45,18 @@
         margin-top: 15px;
         display: none;
     }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+</style>
+</head>
+<body>
 
-&lt;div class="container" id="quiz"&gt;
-    &lt;h2&gt;Czy rudy jest najgorszym premierem po 1989 roku?&lt;/h2&gt;
-    &lt;button class="yes" onclick="correctAnswer()"&gt;Oczywiście, że tak&lt;/button&gt;
-    &lt;button class="no" onclick="wrongAnswer()"&gt;NIE&lt;/button&gt;
-    &lt;div class="error" id="error"&gt;BŁĘDNA ODPOWIEDŹ!!!&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
+<div class="container" id="quiz">
+    <h2>Czy Rudy jest najgorszym premierem i najwiÄ™kszym kĹ‚amcÄ… po 1989 roku?</h2>
+    <button class="yes" onclick="correctAnswer()">OczywiĹ›cie, ĹĽe tak</button>
+    <button class="no" onclick="wrongAnswer()">NIE</button>
+    <div class="error" id="error">BĹÄDNA ODPOWIEDĹą!!!</div>
+</div>
+<h1>Powered by Wojciech Wojtukiewicz</h1>
+<script>
 function correctAnswer() {
     // tu ustaw adres docelowy
     window.location.href = "https://wojtus82.github.io/A1-A2-B1_MaMa/";
@@ -69,12 +65,12 @@ function correctAnswer() {
 function wrongAnswer() {
     const errorDiv = document.getElementById('error');
     errorDiv.style.display = 'block';
-    setTimeout(() =&gt; {
+    setTimeout(() => {
         errorDiv.style.display = 'none';
     }, 5000);
 }
-&lt;/script&gt;
+</script>
 
-&lt;/body&gt;
-&lt;/html&gt;
-</PRE></BODY></HTML>
+</body>
+</html>
+
