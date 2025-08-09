@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=windows-1250" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7601.17514"></HEAD>
+<BODY><PRE>&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Pytanie kontrolne&lt;/title&gt;
+&lt;style&gt;
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+    }
+    .yes {
+        background: green;
+        color: white;
+    }
+    .no {
+        background: red;
+        color: white;
+    }
+    .error {
+        color: red;
+        font-weight: bold;
+        margin-top: 15px;
+        display: none;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="container" id="quiz"&gt;
+    &lt;h2&gt;Czy rudy jest najgorszym premierem po 1989 roku?&lt;/h2&gt;
+    &lt;button class="yes" onclick="correctAnswer()"&gt;Oczywiście, że tak&lt;/button&gt;
+    &lt;button class="no" onclick="wrongAnswer()"&gt;NIE&lt;/button&gt;
+    &lt;div class="error" id="error"&gt;BŁĘDNA ODPOWIEDŹ!!!&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+function correctAnswer() {
+    // tu ustaw adres docelowy
+    window.location.href = "https://wojtus82.github.io/A1-A2-B1_MaMa/";
+}
+
+function wrongAnswer() {
+    const errorDiv = document.getElementById('error');
+    errorDiv.style.display = 'block';
+    setTimeout(() =&gt; {
+        errorDiv.style.display = 'none';
+    }, 5000);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</PRE></BODY></HTML>
